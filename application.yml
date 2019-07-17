@@ -1,0 +1,34 @@
+# ===================================================================
+# JHipster Sample Spring Cloud Config.
+# ===================================================================
+
+# Property used on app startup to check the config server status
+configserver:
+  name: Qorosauto Registry config server
+  status: Connected to the Qorosauto Registry config server, using git@github.com:Jimmy3389/qorosauto-config.git !
+
+# Default JWT secret token (to be changed in production!)
+jhipster:
+  security:
+    authentication:
+      jwt:
+        secret: bXktc2VjcmV0LXRva2VuLXRvLWNoYW5nZS1pbi1wcm9kdWN0aW9uLWFuZC10by1rZWVwLWluLWEtc2VjdXJlLXBsYWNl
+server:
+  address: 0.0.0.0
+  http2:
+    enabled: true
+spring:
+  mvc:
+    favicon:
+      enabled: false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    default-property-inclusion: non-null
+    time-zone: GMT+8
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+  devtools:
+    restart:
+      enabled: false
+system:
+  conf:
+    corsEnable: false
